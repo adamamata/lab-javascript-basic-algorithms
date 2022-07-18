@@ -62,5 +62,8 @@ console.log(count);
 
 let etCount = 0; 
 for (let i = 0; i <= text.length; i++){
-    
+    if (text[i] === "e" && text[i+1] === "t" && text[i-1] === " " && text[i+2] === " "){
+        etCount += 1;
+    }
 }
+console.log(etCount);
